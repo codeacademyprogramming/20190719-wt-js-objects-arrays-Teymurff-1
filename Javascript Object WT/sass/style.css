@@ -1,0 +1,7 @@
+.sortitems:hover {
+  cursor: pointer;
+  color: #00c7ff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+/*# sourceMappingURL=style.css.map */

@@ -8,6 +8,7 @@
     <title>Students List</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="sass/style.css">
 </head>
 
 <body>
@@ -15,15 +16,18 @@
     <main>
         <div class="container">
             <div class="row my-5">
-                <div class="col-9">
+                <div class="col-1">
+                        <button type="button" class="btn btn-warning" onclick="randomly()">Random</button>
+                </div>
+                <div class="col-8">
                         <table class="table table-dark">
                                 <thead>
                                   <tr>
-                                    <th scope="col">Name</th>
-                                    <th scope="col">Surname</th>
-                                    <th scope="col">Email</th>
-                                    <th scope="col">Phone</th>
-                                    <th scope="col">Age</th>
+                                    <th class="sortitems" scope="col" onclick="sortByName()">Name</th>
+                                    <th class="sortitems" scope="col" onclick="sortBySurname()">Surname</th>
+                                    <th class="sortitems" scope="col" onclick="sortByEmail()">Email</th>
+                                    <th class="sortitems" scope="col" onclick="sortByPhone()">Phone</th>
+                                    <th class="sortitems" scope="col" onclick="sortByAge()">Age</th>
                                   </tr>
                                 </thead>
                                 <tbody class="student-table">
